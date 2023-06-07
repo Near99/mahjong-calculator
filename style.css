@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+  background: #ffc600;
+  font-family: "helvetica neue";
+  font-size: 20px;
+  font-weight: 200;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.ranking {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.rankingFormHeader {
+  margin: 0;
+  text-align: center;
+  outline: 0;
+  border: 10px solid #f7f7f7;
+  width: 100%;
+  position: relative;
+  top: 10px;
+  z-index: 2;
+  border-radius: 5px;
+  font-size: 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+}
+
+.ranking li {
+  background: white;
+  list-style: none;
+  border-bottom: 1px solid #d8d8d8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.ranking li:nth-child(even) {
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
+}
+
+.ranking li:nth-child(odd) {
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  background: linear-gradient(to top, #ffffff 0%, #efefef 100%);
+}
+
+.indexBar {
+  background-color: #ffc600;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.formController {
+  padding-top: 20px;
+}
+
+.win {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.win > input,
+select {
+  width: 90%;
+  height: 30px;
+  border: none;
+}
+
+.win > label {
+  padding: 10px;
+}
+
+.inactive {
+  visibility: visible;
+}
+
+button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.resetContainer {
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
+}
+
+.reset {
+  background-color: red;
+  color: #ffffff;
+}
+
+.rank1 {
+  background-color: #e3e3e3;
+}
+
+.rank2 {
+  background-color: #964b00;
+  color: #ffffff;
+}
+
+.rank3 {
+  background-color: #ffffff;
+}
+
+.content-table {
+  margin: 25px 0;
+  border-collapse: collapse;
+  font-size: 0.7em;
+  min-width: 80%;
+}
+
+.content-table thead tr {
+  /* background-color: #009879; */
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  text-transform: capitalize;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #ffffff;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
+}
+
+.content-table tbody tr:nth-of-type(odd) {
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  background: linear-gradient(to top, #ffffff 0%, #efefef 100%);
+}
